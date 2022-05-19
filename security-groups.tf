@@ -1,7 +1,7 @@
 # Security Group All Traffic Attached To Instnaces In instances.tf
 resource "aws_security_group" "demo_sg" {
   name        = "Allow_All_Ports"
-  description = "Allow All Ports All Protocals"
+  description = "Allow All Ports All Protocols"
   vpc_id      = aws_vpc.vpc.id
 
   ingress {
