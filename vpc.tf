@@ -1,6 +1,6 @@
 # Provider
 provider "aws" {
-  region = "us-west-2"
+  region = "us-east-2"
 }
 # VPC
 resource "aws_vpc" "vpc" {
