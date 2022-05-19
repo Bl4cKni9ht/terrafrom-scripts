@@ -6,8 +6,8 @@ resource "aws_security_group" "demo_sg" {
 
   ingress {
     from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
+    to_port     = 0 
+    protocol    = "-1" #allows all incoming traffic from all protocols (https/http, nfs, ssh, smtp)
     cidr_blocks = ["0.0.0.0/0"]
   }
   egress {
